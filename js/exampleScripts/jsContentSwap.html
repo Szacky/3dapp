@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>JavaScript Swap Page Contents Function</title>
+
+<!-- JavaScript document.getElementById(parameter) where paramer is usually a div tag ID -->
+<script type="text/javascript">
+
+var counter = 0;
+
+function swap(selected)
+{
+	<!-- First do not display all div id contents -->	
+	document.getElementById('home').style.display = 'none';
+	document.getElementById('coke').style.display = 'none';
+	document.getElementById('sprite').style.display = 'none';
+	document.getElementById('pepper').style.display = 'none';
+	
+	<!-- Then display the selected div id contents -->
+	document.getElementById(selected).style.display = 'block';
+
+}
+function changeLook()
+{
+	<!-- Use chnge the style dynamically -->
+	document.getElementById('theme').style.backgroundColor = '#770000';
+	document.getElementById('theme').style.fontFamily = 'arial,sans-serif';
+	document.getElementById('theme').style.color = 'white';
+}
+function countUp()
+{
+	<!-- Simple incremental counter -->
+	counter += 1;
+	<!-- Assign the counter result to the inn HTML of the result ID div tag -->
+	document.getElementById('result').innerHTML = counter;
+}
+function changeColor(newColor) {
+    var elem = document.getElementById("para1");
+    elem.style.color = newColor;
+}
+</script>
+
+</head>
+
+<body id="theme">
+	<!-- Navigation menu -->
+	<p> <a href="javascript:swap('home')">Home</a> |
+    	<a href="javascript:swap('coke')">Coca Cola</a> |
+        <a href="javascript:swap('sprite')">Sprite</a> |
+        <a href="javascript:swap('pepper')">Dr Pepper</a>
+    </p>
+   
+    <!--Single page contents, each set of contents in a container div    	.
+    	Initially, the home page will be displayed until one of the other nav menu links are clicked 
+    	Then the JavaScript swap function will prcess the 'selected' contents, 
+    	first ensuring all pages are not displayed, then displaying the selected conetnts as a block element-->
+    <div id="home"><b>Home:</b> Welcome to my basic 3D App. </div>
+    <div id="coke" style="display:none;"><b>Coca Cola:</b> Check out my Coke 3D model. </div>
+    <div id="sprite" style="display:none;"><b>Sprite:</b> Check out my Sprite 3D model. </div>
+    <div id="pepper" style="display:none;"><b>Dr Pepper:</b> Check out my Dr Pepper 3D model. </div>
+
+    <!-- Click to activate the counter -->
+    <p>Click <a href='javascript:countUp()'>here</a> to count: 
+        <div id="result"></div>
+    </p>  
+
+	<!-- Simple button -->
+    <p><input type="button" value="Click me!" onClick="changeLook()" /> to restyle the page. </p>
+    
+    <p id="para1">Some text here</p>
+  	<button onclick="changeColor('green');">green</button>
+  	<button onclick="changeColor('red');">red</button>
+   
+</body>
+</html>

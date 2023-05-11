@@ -1,0 +1,871 @@
+/* Method to declare your own fonts */
+@font-face {
+    font-family: cocaColaFont;
+    src: url(../assets/fonts/loki_cola/LOKICOLA.TTF);
+}
+
+@font-face {
+    font-family: OpenSans;
+    src: url(../assets/fonts/Open_Sans/OpenSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: Oswald;
+    src: url(../assets/fonts/Oswald/static/Oswald-Regular.ttf);
+}
+
+/* Extra small devices (portrait phones, less than 576px)
+   No media query since this is the default in Bootstrap
+*/
+
+body {
+    background-color: rgb(255, 255, 255);
+}
+
+
+#logo_a {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 80px;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 2px 2px #333;
+}
+
+.bubble {
+    position: absolute;
+    background-color: transparent;
+    border: 3px solid white;
+    border-radius: 50%;
+    opacity: 0;
+}
+
+.main_contents {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* Some simple CSS rules for styling p, h1 to h6, etc. in the main contents container */
+p {
+    font-family: 'OpenSans', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Oswald', sans-serif;
+    /*font-family: cocaColaFont;*/
+}
+
+/* CSS rules for the main_text IDs */
+#main_3d_image {
+    background-image: url(../assets/images/main_3D_538.png);
+    background-repeat: no-repeat;
+    height: 200px;
+    transition: background-position-x 1.2s ease-in-out;
+    background-position-x: 0%; 
+}
+#main_3d_image:hover {
+    background-position-x: 100%;
+}
+#main_text {
+    float: left;
+    margin: 5%;
+    width: 90%;
+    display: block;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+#main_text h2 {
+    color: rgba(0,102,153,1);
+    font-size: 20px;
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
+#main_text h3 {
+    font-size: 15px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+#main_text p {
+    font-size: 12px;
+    margin: 0px;
+    line-height: 1.2;
+}
+
+#main_text:hover {
+    transform: scale(1.1);
+  }
+
+.drinksText > h2 {
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
+
+.drinksText > h3 {
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
+
+.drinksText > p {
+    font-size: 12px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    line-height: 1.4;
+}
+
+.card {
+    border: 1px solid rgba(0,0,0,0.2);
+    /* border-radius: .25rem;*/
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: rgb(255, 255, 255);
+ }
+
+ .card-text {
+    font-size: 13px;
+    margin-top: 10px;
+ }
+
+ .t1 {
+    display: inline-block;
+    padding-top: 0.3125rem;
+    padding-bottom: 0.3125rem;
+    position: relative;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    font-size: 30px;
+ }
+
+ /* CSS rule to style the mobile logo */
+    .logo {
+    margin-top: 3px;
+    position: relative;
+    left: 30%;
+    }
+    
+    .logo h1 {
+    font-family: cocaColaFont; /* You don't need to repeat this for each media query as it is propagated */
+    font-size: 31px;
+    margin: 0;
+    margin-top: -10px;
+    margin-bottom: -15px;
+    float: left;
+    padding-top: 0px;
+    padding-left: 0px;
+    padding-right: 2px;
+    }
+    
+    .logo h2 {
+    font-family: cocaColaFont;
+    font-size: 31px;
+    margin-top: -6px;
+    margin-bottom: -15px;
+    padding-top: 0px;
+    padding-left: 0px;
+    padding-right: 3px;
+    float: left;
+    }
+    
+    .logo h3 {
+    font-size: 18px;
+    margin-top: 0px;
+    margin-bottom: -5px;
+    padding-top: 0px;
+    padding-left: 0px;
+    float: left;
+    }
+    
+    .logo p {
+    font-size: 7px; /* You may have to tweak this to get a good fit */
+    margin-top: 22px; /* You may have to tweak this to get a good fit */
+    margin-bottom: 0px;
+    padding-top: 0px;
+    padding-left: 3px;
+    }
+
+    .t2 {
+    text-align: center;
+    margin-bottom: 20px;
+    }
+    
+    .t2 a {
+    display: inline-block;
+    margin: 5px 10px;
+    padding: 5px 10px;
+    color: #333;
+    text-decoration: none;
+    border: 0.5px solid #333;
+    border-radius: 5px;
+    }
+    
+    .t2 a:hover {
+    background-color: #333;
+    color: #fff;
+    }
+
+    .logo1 {
+        margin-top: 3px;
+        position: relative;
+        left: 10%;
+    }
+
+    .logo1 h1 {
+    font-family: cocaColaFont; /* You don't need to repeat this for each media query as it is propagated */
+    font-size: 31px;
+    margin: 0;
+    margin-top: -10px;
+    margin-bottom: -15px;
+    float: left;
+    padding-top: 0px;
+    padding-left: 0px;
+    padding-right: 2px;
+    }
+    
+    .logo1 h2 {
+    font-family: cocaColaFont;
+    font-size: 31px;
+    margin-top: -6px;
+    margin-bottom: -15px;
+    padding-top: 0px;
+    padding-left: 0px;
+    padding-right: 3px;
+    float: left;
+    }
+    
+    .lf {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    
+    /* New CSS rules to better position the navbar and increase its height, Bootstrap defaults tend to make your site look like a Bootstrap clone! 
+    */
+
+    /* CSS rule to overwrite the navbar background and border color — again, helps to stop your site looking like a Bootstrap clone! 
+    */
+    .navbar_coca_cola {
+        background-color: #ffffff; /* Set navbar background color */
+        /* border-color: yellow; Sets the navbar border color */
+        /* border-style: solid; */
+        border-width: 0px;
+        min-height: 70px;
+    }
+
+    /* CSS rule to overwrite the navbar-brand font color
+    */
+    .navbar_coca_cola .navbar-brand {
+        color: rgb(0, 0, 0);
+    }
+        
+    /* CSS rule to overwrite the navbar-brand font hover color
+    */
+    .navbar_coca_cola .navbar-brand:hover {
+        color: rgb(153, 7, 7);
+    }
+
+    /* NAVIGATION MENU
+    */
+
+    /* CSS rules to overwrite the position of the Bootstrap menu These are derived from the Bootstrapbay Bootstrap Tutorial Part 11 — CSS Modifications to Navbar and Buttons shows how to do this using Bootstrap 3, the principle should be the same: https://www.youtube.com/watch?v=7v2yC3GyDHU  
+
+    There is plenty more styling to do than indicated here, in mobile it still defaults to Bootstrap CSS on dropdown!
+    */
+    .navbar_coca_cola .navbar-nav > li > a {
+        color: rgb(0, 0, 0); 
+    }
+
+    /* CSS rule to overwrite the bootstrap.css text hover color on the navbar
+    */
+    .navbar_coca_cola .navbar-nav > li > a:hover, 
+    .navbar_coca_cola .navbar-nav > li > a:focus {
+        color: rgb(163, 29, 11);   
+    }
+
+    .navbar_coca_cola .navbar-nav .nav-item {
+        margin-top: 0px;
+    }
+
+    /* CSS rule to overwrite the bootstrap.css rules for setting the active font color and background colour
+    */
+    .navbar_coca_cola .navbar-nav .nav-item > .active, 
+    .navbar_coca_cola .navbar-nav > .active > a:hover, 
+    .navbar_coca_cola .navbar-nav > .active > a:focus {
+        color:  #760003; /* Font color for active font */
+        /*background-color: #3399ff; /* Blue color for background */
+    }
+
+    /* A set of CSS rules to change the Bootstrap defaults for the menu link text color, hover, background, focus
+    */
+        
+    /* CSS rule to overwrite the bootstrap.css text hover color on the navbar
+    */
+    .navbar_coca_cola .navbar-nav > li > a:hover, 
+    .navbar_coca_cola  .navbar-nav > li > a:focus {
+        color: green;  
+    }
+
+    /* These next two CSS rules control the style of the icon bar */
+    .navbar_coca_cola .navbar-toggler {
+        border-color: rgb(0, 0, 0);
+    }
+
+    .navbar_coca_cola  .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 1.0)' stroke-width='4' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+    }
+
+    .navbar_coca_cola .navbar-toggler {
+        outline: none !important;
+    }
+
+    /* Let's style the dropdown menu
+    */
+
+    .dropdown-menu {
+        text-align: -webkit-left;
+        background-color: #ffffff;
+        margin-top: 20px; /* Experiment to move the dropdown menu down */
+    }
+
+    .dropdown-menu .dropdown-item {
+        color: #eb0025;
+    }
+
+    .dropdown-menu .dropdown-item:hover {
+        color: #030303;
+        background-color: #e98074;
+    }
+    
+    /* CSS rule to style the footer */
+    .footer {
+        color: #030303;
+        background-color: #760003; /* Set navbar footer background color same as header */
+        height: 60px;
+        width: 100%;
+        position: absolute;
+        top: 100%;
+    }
+
+    .navbar-text > a {
+        font-size: 10px;
+    }
+
+    .navbar-text > p {
+        color: rgb(255, 255, 255);
+        font-size: 14px;
+        text-decoration: none;
+    }
+
+    .copyright {
+        padding-top: 8px;
+        width: 60%;
+    }
+
+    .social {
+        padding-top: 0px;
+        width: 30%;   
+    }
+
+    .fa-twitter-square:before {
+        content: "\f081";
+        color: rgb(255, 48, 11);
+        font-size: 1em;
+    }
+
+    .fa-github-square:before {
+        content: "\f092"; 
+        color: yellow;
+        font-size: 1em;
+    }
+
+    .fa-google-plus-square:before {
+        content: "\f0d4"; 
+        color: blue;
+        font-size: 1em;
+    }
+
+    .fa-facebook-square:before {
+        content: "\f082";
+        color: red;
+        font-size: 1em; 
+    }
+    
+    /* Lifted form the bootsrap.css file, and modified to emulate the nav-bar menu styling */
+    .nav-tabs .nav-link.active, .nav-tabs .nav-itnav-tabem.show .nav-link {
+        color:  #f7f7f7; /* Font color for active font */
+        background-color: #b32121; /* Blue color for background */
+        border-color: #dee2e6 #dee2e6 #fff;
+    }
+
+    .nav-tabs .nav-link {
+        color: rgb(0, 0, 0);  
+        border: 1px solid transparent;
+        border-top-left-radius: 0.25rem;
+        border-top-right-radius: 0.25rem;
+    }
+
+    /* Added this to emulate the nav-bar link styling */
+    .nav-tabs .nav-link:hover {
+        color: green;
+        border: 1px solid transparent;
+    }
+
+    .camera-btns {
+        /* background-color: rgba(0, 0, 255, 0.3);  */
+        border-color: black; 
+        border-style: solid;
+        border-width: 0px;
+        margin-top: 0px;
+        padding: 0px;
+    }
+    
+    .camera-btns > p  {
+        font-size: 15px;
+        color: red;
+        padding: 5px 0px;
+        font-weight: 900; 
+    }
+    
+    .camera-font {
+        font-weight: 400;   
+        color: white;
+    }
+    
+    .camera-font:hover {
+        font-weight: 700;   
+        color: rgb(3, 3, 3);
+    }
+
+    .btn-responsive {
+        margin-right: 2px;
+        margin-bottom: 4px;
+        padding: 5px 5px;
+        font-size: 80%;
+        line-height: 1.2;
+        white-space: normal !important;
+    }
+
+    .img-thumbnail {
+        padding: 0.25rem;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        background-color: #fff;
+        border: 1px solid #dee2e6;
+        border-radius: 0.25rem;
+        max-width: 100%;
+        height: auto;
+    }
+    
+    .gallery .img-thumbnail{
+        background-color: rgba(255, 255, 255, 0.0);
+        padding: 0.25rem;
+        margin: 5px;
+        border: 1px solid #dee2e6;
+        border-radius: 0.25rem;
+        max-width: 43%;
+        height: auto;
+    }
+    
+    .gallery-header {
+        color: white;
+    }
+    
+    .gallery-header:hover {
+        color: green;
+        border: 1px solid transparent;
+    }
+    
+    .model3D  {
+        background-color: rgba(255, 255, 255, 0.0); /* Adjust the transparency to bring the color forward */
+        border-radius: 5px;
+        border: 0px solid rgba(0, 0, 0, 1.0);
+        padding: 2px;
+        height: 200px;
+    }
+
+    X3D, x3d {
+        background-color: rgba(255, 255, 255, 0.0); /* Adjust the transparency to bring the color forward */
+        border-radius: 5px;
+        border: 0px solid rgba(255, 0, 0, 1.0);
+        width: 100%;
+        height: 100%
+        
+    }
+
+/* Small devices (landscape phones, 576px and up)
+*/
+@media (min-width: 330px) {
+
+    body {
+        background-color: rgb(255, 255, 255);
+    }
+
+    #main_3d_image {
+        background-image: url(../assets/images/main_3D_768.png);
+        background-repeat: no-repeat;
+        height: 288px;
+    }
+
+    #main_text {
+        float: right;
+        margin-top: 7%;
+    }
+
+    .drinksText > h2 {
+        color: rgb(0, 0, 0);
+        font-size: 25px;
+        margin-top: 0px;
+        margin-bottom: 5px;
+    }
+    
+    .drinksText > h3 {
+        color: rgb(0, 0, 0);
+        font-size: 18px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    
+    .drinksText > p {
+        font-size: 14px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        line-height: 1.4;
+    }
+
+    .card {
+        /* border-radius: .25rem;*/
+        margin-top: 10px;
+        margin-bottom: 10px;
+        background-color: rgb(255, 255, 255);
+    }
+
+    .navbar_coca_cola {
+        background-color: rgb(255, 255, 255); 
+        min-height: 90px;
+    }
+
+    /* CSS rule to style the footer */
+    .footer {
+        background-color: #94d874; 
+        height: 60px;
+       
+    }
+
+    .navbar-text > a {
+        font-size: 12px;
+
+    }
+
+    .navbar-text > p {
+        color: rgb(228, 75, 15);
+    }
+
+    .copyright {
+        padding-top: 16px;
+    }
+
+    .social {
+        padding-top: 5px;
+        /* border: 1px solid rgba(0,0,0,.125); */
+    }
+
+    .model3D  {
+        height: 200px;
+    }
+
+}
+
+/* Medium devices (tablets, 768px and up)
+*/
+@media (min-width: 768px) { 
+    
+    body {
+        background-color: rgb(255, 255, 255);
+    }
+
+
+    #main_3d_image {
+        background-image: url(../assets/images/main_3D_970.png);
+        background-repeat: no-repeat;
+        height: 363px;
+    }
+
+    .drinksText > h2 {
+        color: rgb(0, 0, 0);
+        font-size: 27px;
+        margin-top: 0px;
+        margin-bottom: 5px;
+    }
+    
+    .drinksText > h3 {
+        color: rgb(0, 0, 0);
+        font-size: 20px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    
+    .drinksText > p {
+        font-size: 15px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        line-height: 1.4;
+    }
+
+    .card {
+        border: 0px solid rgba(0,0,0,.125);
+        /* border-radius: .25rem;*/
+        margin-top: 10px;
+        margin-bottom: 10px;
+        background-color: rgb(255, 255, 255);
+    }
+
+    #main_text {
+        float: right;
+        margin-top: 7%;
+    }
+
+    #main_text h2 {
+        color: crimson;
+        font-size: 30px;
+    }
+    
+    #main_text h3 {
+        color: darkcyan;
+        font-size:22px;
+    }
+    
+    #main_text p {
+        font-size: 15px;
+    }
+    
+    /* ++++++++++++++++++++++++++LOGO+++++++++++++++++++++++*/
+    
+    /* CSS rule to style the mobile logo */
+
+    .logo {
+        margin-top: 3px;
+    }
+
+    .logo h1 {
+        font-family: cocaColaFont; /* You don't need to repeat this for each media query as it is propogated */
+        font-size: 41px;
+        margin: 0;
+        margin-top: 0px;
+        margin-bottom: -15px;
+        float: left;
+        padding-top: 0px;
+        padding-left: 0px;
+        padding-right: 2px;
+    }
+
+    .logo h2 {
+        font-family: cocaColaFont;
+        font-size: 43px;
+        margin-top: 5px;
+        margin-bottom: -15px;
+        padding-top: 0px;
+        padding-left: 0px;
+        padding-right: 3px;
+        float: left;
+    }
+
+    .logo h3 {
+        font-size: 31px;
+        margin-top: 5px;
+        margin-bottom: 3px;
+        padding-top: 0px;
+        padding-left: 0px;
+        float: left;
+    }
+
+    .logo p {
+        font-size: 10px;
+        margin-top: 45px;
+        margin-bottom: 0px;
+        padding-top: 0px;
+        padding-left: 8px;
+    }
+
+    .navbar_coca_cola {
+        background-color: rgb(255, 255, 255); 
+        min-height: 90px;
+    }
+
+    /* CSS rule to style the footer */
+    .footer {
+        background-color: #b890b1;
+        height: 100px;
+        width: 100%;
+        position: absolute;
+        top: 100%;
+    }
+
+    .navbar-text > a {
+        font-size: 10px;
+    }
+
+    .navbar-text > p {
+        color: rgb(12, 5, 3);
+        font-size: 18px;
+    }
+
+    .copyright {
+        padding-top: 20px;
+    }
+
+    .social {
+        padding-top: 7px;
+    }
+
+    .model3D  {
+        height: 200px;
+    }
+}
+
+/* Large devices (desktops, 992px and up)
+*/
+@media (min-width: 992px) { 
+    
+    body {
+        background-color: rgb(255, 255, 255);
+    }
+    
+    #main_3d_image {
+        background-image: url(../assets/images/main_3D_1400.png);
+        background-repeat: no-repeat;
+        height: 400px;
+    }
+
+    #main_text {
+        float: right;
+        margin-top: 20%;
+    }
+
+    #main_text h2 {
+        color: crimson;
+        font-size: 30px;
+    }
+    
+    #main_text h3 {
+        color: darkcyan;
+        font-size:22px;
+    }
+    
+    #main_text p {
+        font-size: 15px;
+    }
+
+    .card {
+        border: 0px solid rgba(0,0,0,.125);
+        /* border-radius: .25rem;*/
+        margin-top: 10px;
+        margin-bottom: 10px;
+        background-color: rgb(255, 255, 255);
+    }
+
+    .logo {
+        margin-top: 7px;
+    }
+
+    .logo h1 {
+        font-family: cocaColaFont;
+        font-size: 59px;
+        margin: 0;
+        margin-top: 0px;
+        margin-bottom: -20px;
+        float: left;
+        padding-top: 0px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .logo h2 {
+        font-family: cocaColaFont;
+        font-size: 65px;
+        margin-top: 7px;
+        margin-bottom: -25px;
+        padding-top: 0px;
+        padding-left: 0px;
+        padding-right: 6px;
+        float: left;
+    }
+
+    .logo h3 {
+        font-size: 40px;
+        margin-top: 15px;
+        margin-bottom: -5px;
+        padding-top: 0px;
+        padding-left: 0px;
+        float: left;
+    }
+
+    .logo p {
+        font-size: 14px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        padding-top: 65px;
+        padding-left: 12px;
+    }
+
+    .navbar_coca_cola {
+        background-color: rgb(255, 255, 255); 
+        min-height: 120px;
+    }
+
+    /* CSS rule to style the footer */
+    .footer {
+        background-color: grey;
+        height: 100px;
+        width: 100%;
+        position: absolute;
+        top: 100%;
+        
+    }
+
+    .navbar-text > a {
+        font-size: 15px;
+    }
+
+    .navbar-text > p {
+        color: rgb(12, 5, 3);
+        font-size: 23px;
+    }
+
+    .copyright {
+        padding-top: 20px;
+    }
+
+    .social {
+        padding-top: 7px;
+    }
+
+    .model3D  {
+        height: 250px;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up)
+*/
+@media (min-width: 1200px) {   
+    #main_3d_image {
+        background-image: url(../assets/images/main_3D_1400.png);
+        background-repeat: repeat;
+        height: 524px;
+    }
+
+    .model3D  {
+        height: 300px;
+    }
+
+}
+
+
+
