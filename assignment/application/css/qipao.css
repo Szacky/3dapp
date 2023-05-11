@@ -1,0 +1,61 @@
+/* 过渡动画的背景样式 */
+.intro {
+    height: 100vh; /* 使过度动画占满整个屏幕 */
+    background-color: red; /* 初始背景颜色为红色 */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* 可口可乐logo的样式 */
+  .logo {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 50px;
+    background-color: rgb(0, 0, 0); /* logo的背景颜色为白色 */
+    border-radius: 50%; /* 创建圆形边框 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .logo img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  
+  /* 汽水气泡的样式 */
+  .bubble-container {
+    position: relative;
+  }
+  
+  .bubble {
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    position: absolute;
+    bottom: 0;
+    animation: bubble-rise 3s ease-in-out infinite;
+    border-radius: 50%;
+  }
+  
+  /* 汽水气泡动画 */
+  @keyframes bubble-rise {
+    0% {
+      bottom: 0;
+      transform: scale(0);
+    }
+    50% {
+      transform: scale(1.5);
+    }
+    100% {
+      bottom: 100%;
+      transform: scale(2);
+    }
+  }
+  
+  /* 网页正文样式 */
+  .content {
+    display: none; /* 隐藏网页正文，待过渡动画完成后再显示 */
+  }
